@@ -115,7 +115,6 @@
                     </form>
                   </div>
 
-
                 </div>
                 <div class="widget-foot">
                   <!-- Footer goes here -->

@@ -465,7 +465,7 @@ h6 a:hover { text-decoration: none }
 
 /* Layout
 -------------------------------------------------------------- */
-.wprt-container { width: 1170px; margin: 0 auto; max-width: 90%; }
+.wprt-container {/* width: 1170px;*/ margin: 0 auto; max-width: 95%; }
 #page { background-color: #fff; }
 #main-content { padding: 102px 0 90px; }
 .no-padding-content #main-content { padding: 0; }

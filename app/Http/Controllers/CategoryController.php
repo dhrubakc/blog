@@ -29,6 +29,7 @@ class CategoryController extends Controller
     public function create()
     {
         return view('category.form');
+
     }
 
     /**
@@ -76,6 +77,7 @@ class CategoryController extends Controller
 
         $category=category::findorfail($id);
         return view('category.edit_form',compact('category'));
+
     }
 
     /**
@@ -86,10 +88,14 @@ class CategoryController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
-    {
-        //
+     {
+        $this->validate($request, [
+            'name' => 'required',
+            'description' => 'required'
+        ]);
+        Category::find($id)->update($request->all());
+        return redirect()->route('category.index')->with('success','Task updated successfully');
     }
-
     /**
      * Remove the specified resource from storage.
      *
