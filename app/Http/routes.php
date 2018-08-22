@@ -12,21 +12,20 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontend.frontend');
 });
 
  Route::auth();
 Route::group(['middleware' => 'auth'], function () {
 Route::get('/home', 'HomeController@index');
-//Route::post('/home', 'HomeController@index');
-Route::get('category', 'CategoryController@index');
-Route::get('category/create', 'CategoryController@create');
-
-Route::get('category/{id}/edit', 'CategoryController@edit');
-//Route::get('category/{id}/edit', 'CategoryController');
-
-Route::POST('category/store', 'CategoryController@store');
-Route::delete('category/{id}', 'CategoryController@destroy');
+Route::post('/home', 'HomeController@index');
+//Route::get('category', 'CategoryController@index');
+//Route::get('category/create', 'CategoryController@create');
+//Route::get('category/{id}/edit', 'CategoryController@edit');
+//Route::POST('category', 'CategoryController@store');
+//Route::patch('category/{id}', 'CategoryController@update');
+ //Route::delete('category/{id}', 'CategoryController@destroy');
+Route::resource('category','CategoryController');
 
 });
 

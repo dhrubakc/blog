@@ -45,9 +45,9 @@
                         <a href="{{URL::to('/').'/category/'.$category->id.'/edit'}}"><button class="btn btn-primary pull-left" >Edit</button></a> &nbsp;&nbsp;&nbsp;&nbsp;
                      
                       <form action="{{URL::to('/').'/category/'.$category->id}}" method="POST" style="width: 65px;float: left;" >
-                        {{ csrf_field() }}
-                    {{ method_field('DELETE') }}
-    <button class="btn btn-danger">Delete</button>
+                      <input name="_method" type="hidden" value="DELETE">
+                      <input name="_token" type="hidden" value="{{csrf_token()}}">
+    <button class="btn btn-danger" type="submit" onclick="return confirm('are you sure want to delete?');">Delete</button>
 </form>
                      </td>
                       @endforeach

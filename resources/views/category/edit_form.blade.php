@@ -85,8 +85,9 @@
                   <div class="form quick-post">
                     <!-- Edit profile form (not working)-->
                     
-                    <form class="form-horizontal" action="{{URL::to('/category').'/'.$category->id}}" method="put">
+                    <form class="form-horizontal" action="{{URL::to('/category').'/'.$category->id}}" method="post">
                       <!-- Title -->
+                      <input name="_method" type="hidden" value="PATCH">
                       <input name="_token" type="hidden" value="{{csrf_token()}}">
                       <div class="form-group">
                         <label class="control-label col-lg-2" for="title">Title</label>

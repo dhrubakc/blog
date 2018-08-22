@@ -6,19 +6,18 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-use App\category;
+use App\contactus;
 
 
 
 
-class CategoryController extends Controller
+class ContactusController extends Controller
 {
     //
 
     public function index()
     {
-        $category_list=category::all();
-        return view('category.table',compact('category_list'));
+      return view('contactus.contactus_form');
     }
 
     /**
@@ -28,9 +27,8 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        return view('category.form');
-
-    }
+        
+    
 
     /**
      * Store a newly created resource in storage.
@@ -40,24 +38,7 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {  
-        $this->validate($request,[
-            'title'=>'required',
-            'description'=>'required',
-        ]);
-
-
         
-        $category= new category;
-        $category->title=$request->title;
-        $category->description=$request->description;
-       $result= $category->save();
-       if ($result) {
-            echo "result save sucessfully";
-           return redirect('/category');
-       }
-       else{ echo "error in result";}
-        // echo 'im here';die();
-        // var_dump(Input::all()); die();
 
     }
 
@@ -82,9 +63,6 @@ class CategoryController extends Controller
 {   
 
 
-        $category=category::findorfail($id);
-        return view('category.edit_form',compact('category'));
-
     }
 
     /**
@@ -96,15 +74,7 @@ class CategoryController extends Controller
      */
     public function update(Request $request, $id)
      {
-         $category=category::findorfail($id);
-         $category->title=$request->title;
-         $category->description=$request->description;
-       $result= $category->update();
-        if ($result) {
-            echo "result update sucessfully";
-           return redirect('/category');
-       }
-        //echo'im in update'; die();
+       
     }
     /**
      * Remove the specified resource from storage.
@@ -114,8 +84,5 @@ class CategoryController extends Controller
      */
     public function destroy($id)
     { 
-        $category=category::findorfail($id);
-        $category->delete();
-        return redirect('/category');
     }
 }

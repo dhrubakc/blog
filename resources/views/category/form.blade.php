@@ -84,7 +84,7 @@
 
                   <div class="form quick-post">
                     <!-- Edit profile form (not working)-->
-                    <form class="form-horizontal" action="{{URL::to('/category/store')}}" method="POST">
+                    <form class="form-horizontal" action="{{URL::to('/category')}}" method="POST">
                       <!-- Title -->
                       <input name="_token" type="hidden" value="{{csrf_token()}}">
                       <div class="form-group">

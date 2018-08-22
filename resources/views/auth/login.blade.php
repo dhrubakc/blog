@@ -19,10 +19,10 @@
   <!--external css-->
   <!-- font icon -->
   <link href="{{URL::to('/')}}/backend/css/elegant-icons-style.css" rel="stylesheet" />
-  <link href="{{URL::to('/')}}/backend/css/font-awesome.css" rel="stylesheet" />
+  <link href="{{URL::to('/')}}/backend/css/font-awesome.css" rel="stylesheet"/>
   <!-- Custom styles -->
   <link href="{{URL::to('/')}}/backend/css/style.css" rel="stylesheet">
-  <link href="{{URL::to('/')}}/backend/css/style-responsive.css" rel="stylesheet" />
+  <link href="{{URL::to('/')}}/backend/css/style-responsive.css" rel="stylesheet"/>
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
   <!--[if lt IE 9]>
