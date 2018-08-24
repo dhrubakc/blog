@@ -5,8 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
-
-use App\frontend;
+use App\FrontEnd;
+use App\Category;
 
 
 
@@ -16,8 +16,9 @@ class FrontEndController extends Controller
     //
 
     public function index()
-    {
-      return view('frontend.frontend');
+    { 
+    	$category_list=Category::all();
+      return view('frontend.frontend',compact('category_list'));
     }
 
     /**
@@ -35,7 +36,8 @@ class FrontEndController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
-     */
+	     */
+}
     public function store(Request $request)
     {  
         

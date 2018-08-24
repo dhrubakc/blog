@@ -15,8 +15,8 @@
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
             <ul class="sub">
-              <li><a class="" href="{{URL::to('/category/create')}}">Add New Category</a></li>
-              <li><a class="" href="{{URL::to('/category')}}">Category List</a></li>
+              <li><a class="" href="{{URL::to('/category/create')}}">Add chairman message</a></li>
+              <li><a class="" href="{{URL::to('/category')}}">Chairman Message</a></li>
             </ul>
           </li>    
       </ul>

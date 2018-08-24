@@ -11,10 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.frontend');
-});
-
+// Route::get('/', function () {
+//     return view('frontend.frontend');
+// });
+Route::get('/','FrontEndController@index');
  Route::auth();
 Route::group(['middleware' => 'auth'], function () {
 Route::get('/home', 'HomeController@index');
@@ -26,6 +26,8 @@ Route::post('/home', 'HomeController@index');
 //Route::patch('category/{id}', 'CategoryController@update');
  //Route::delete('category/{id}', 'CategoryController@destroy');
 Route::resource('category','CategoryController');
+Route::get('/gallery', 'GalleryController@index');
+Route::get('/contactus', 'ContactusController@index');
 
 });
 
