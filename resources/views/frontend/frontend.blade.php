@@ -1,8 +1,10 @@
-<?php echo View::make('includes/front/header'); ?>
-<!-- Slider -->
-<?php echo View::make('includes/front/slider'); ?>
-<!-- / Slider -->
 
+@extends('master')
+<!-- Slider -->
+
+<!-- / Slider -->
+@section('content')
+<?php echo View::make('includes/front/slider'); ?>
 <!-- Main Content -->
 <!-- Main Content -->
 <main id="main-content">
@@ -20,22 +22,22 @@
                                     <div class="wprt-animation-block" data-animate="fadeInUp" data-duration="1s" data-delay="0.2s" data-position="75%">
                                         <div class="wprt-content-box style-1 text-white bg-dark-2 has-move-content has-paddings" data-margin-top="-187" data-padding-top="36" data-padding-right="36" data-padding-bottom="52" data-padding-left="36">
                                             <div class="inner">
-                                                @foreach($category_list as $category)
-                                                <h2 class="heading font-size-18 text-white margin-bottom-22">{{$category->title}}</h2>
+                                                @foreach($chairmanmessage_list as $chairmanmessage)
+                                                <h2 class="heading font-size-18 text-white margin-bottom-22">{{$chairmanmessage->title}}</h2>
                                                 @endforeach
                                             <div class="row">
                                                 <div class="col-lg-4">
                                                     <img src="{{URL::to('/')}}/front/assets/img/doctors/1-360x300.jpg" class="img-thumbnail">
                                                 </div>
                                                 <div class="col-lg-8">
-                                                    @foreach($category_list as $category)
-                                                <p class="text-justify">{{$category->description}}</p>
+                                                    @foreach($chairmanmessage_list as $chairmanmessage)
+                                                <p class="text-justify">{!!$chairmanmessage->description!!}</p>
                                                 @endforeach
                                             </div>
                                             </div>
                                             <div class="row">
-                                                <div class="wprt-btn col-lg-12 text-right" style="margin-top:10px;">
-                                                    <a class="wprt-button small outline light" href="#">READ MORE</a>
+                                            <div class="wprt-btn col-lg-12 text-right" style="margin-top:10px;">
+                                                    <!-- <a class="wprt-button small outline light" href="#">READ MORE</a> -->
                                                 </div>
                                             </div>    
                                             </div>                                     
@@ -1098,7 +1100,7 @@
 </main> <!-- /#main-content -->
 
 <!-- Footer -->
-<?php echo View::make('includes/front/footer'); ?>
+@stop
 </div><!-- /#page -->
 </div><!-- /#wrapper -->
 

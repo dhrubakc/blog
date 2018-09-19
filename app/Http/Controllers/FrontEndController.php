@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\FrontEnd;
-use App\Category;
+use App\Chairmanmessage;
 
 
 
@@ -17,8 +17,8 @@ class FrontEndController extends Controller
 
     public function index()
     { 
-    	$category_list=Category::all();
-      return view('frontend.frontend',compact('category_list'));
+    	$chairmanmessage_list=Chairmanmessage::all();
+      return view('frontend.frontend',compact('chairmanmessage_list'));
     }
 
     /**

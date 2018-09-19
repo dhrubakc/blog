@@ -465,7 +465,7 @@ h6 a:hover { text-decoration: none }
 
 /* Layout
 -------------------------------------------------------------- */
-.wprt-container {/* width: 1170px;*/ margin: 0 auto; max-width: 95%; }
+.wprt-container { /*width: 1170px;*/ margin: 0 auto; max-width: 90%; }
 #page { background-color: #fff; }
 #main-content { padding: 102px 0 90px; }
 .no-padding-content #main-content { padding: 0; }
@@ -885,5 +885,6 @@ body.header-style-1 #featured-title-inner { padding-top: 200px }
 	#bottom .bottom-bar-menu { width: 100%; display: block; text-align: center; }
 	#bottom .bottom-bar-content { margin-bottom: 10px; }
 }
+
 
 

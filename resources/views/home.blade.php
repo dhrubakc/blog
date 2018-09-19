@@ -20,8 +20,8 @@
           <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
             <div class="info-box blue-bg">
               <i class="fa fa-cloud-download"></i>
-              <div class="count">6.674</div>
-              <div class="title">Download</div>
+              <div class="count"></div>
+              <div class="title"></div>
             </div>
             <!--/.info-box-->
           </div>
@@ -30,8 +30,8 @@
           <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
             <div class="info-box brown-bg">
               <i class="fa fa-shopping-cart"></i>
-              <div class="count">7.538</div>
-              <div class="title">Purchased</div>
+              <div class="count"></div>
+              <div class="title"></div>
             </div>
             <!--/.info-box-->
           </div>
@@ -40,8 +40,8 @@
           <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
             <div class="info-box dark-bg">
               <i class="fa fa-thumbs-o-up"></i>
-              <div class="count">4.362</div>
-              <div class="title">Order</div>
+              <div class="count"></div>
+              <div class="title"></div>
             </div>
             <!--/.info-box-->
           </div>
@@ -50,8 +50,8 @@
           <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
             <div class="info-box green-bg">
               <i class="fa fa-cubes"></i>
-              <div class="count">1.426</div>
-              <div class="title">Stock</div>
+              <div class="count"></div>
+              <div class="title"></div>
             </div>
             <!--/.info-box-->
           </div>
@@ -79,7 +79,7 @@
               </div>
               <div class="panel-body">
                 <div class="padd">
-                    ----anything to show----
+                    
                  </div>
                 <div class="widget-foot">
                   <!-- Footer goes here -->
@@ -93,15 +93,9 @@
         <!-- project team & activity end -->
 
       </section>
-      <div class="text-right">
+      <div class="text-center">
         <div class="credits">
-          <!--
-            All the links in the footer should remain intact.
-            You can delete the links only if you purchased the pro version.
-            Licensing information: https://bootstrapmade.com/license/
-            Purchase the pro version form: https://bootstrapmade.com/buy/?theme=NiceAdmin
-          -->
-          Designed by <a href="">Lumbini Medical College And Teaching Hospital</a>
+      Designed by <a href="">Lumbini Medical College And Teaching Hospital</a>
         </div>
       </div>
     </section>

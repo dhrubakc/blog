@@ -14,7 +14,7 @@
 
     <!-- Theme Style -->
     <link rel="stylesheet" type="text/css" href="{{URL::to('/')}}/front/style.css">
-
+<link type="text/css" rel="stylesheet" href="{{URL::to('/')}}/front/assets/css/cm-overlay.css" />
     <!-- Favicon and touch icons  -->
     <link rel="shortcut icon" href="{{URL::to('/')}}/front/assets/icon/logo.png">
     <link rel="apple-touch-icon-precomposed" href="assets/icon/apple-touch-icon-158-precomposed.png">
@@ -61,15 +61,16 @@
 
                 <nav id="main-nav" class="main-nav">
                     <ul class="menu">
-                        <li  class="current-menu-item menu-item-has-children"><a href="home.html">About Us</a>
+                        <li  class="current-menu-item menu-item-has-children"><a href="#">About Us</a>
                             <ul class="sub-menu">
-                            <li><a href="#">Introduction</a></li>
-                                <li><a href="#">Geographical Location of LMC</a></li>
-                                <li><a href="#">Mission and Visions of LMC</a></li>
-                                <li><a href="#">Executive Members of LMC</a></li>
-                                <li><a href="#">Board of Directors</a></li>
+                            <li><a href="{{url::to('/')}}/introfront">Introduction </a></li> 
+                                <li><a href="{{url::to('/')}}/geolocationfront">Geographical Location of LMC</a></li>
+                                <li><a href="{{url::to('/')}}/missionfront">Mission and Visions of LMC</a></li>
+                                <li><a href="{{url::to('/')}}/boardmemberfront">Executive Members of LMC</a></li>
+                                <li><a href="{{url::to('/')}}/boardmemberfront">Board of Directors</a></li>
                             </ul>
                         </li>
+
                         <li class="menu-item-has-children"><a href="#">Programmes</a>
                             <ul class="sub-menu">                                
                                 <li class="menu-item-has-children"><a href="home.html">MBBS Program</a>
@@ -102,7 +103,7 @@
                                 <li><a href="#">IPD Services</a></li>                            
                             </ul>
                         </li>
-                        <li><a href="#">Results</a></li>
+                        <li><a href="{{url::to('/')}}/resultfront">Results</a></li>
                         <li class="menu-item-has-children"><a href="#">Journals</a>
                         <ul class="sub-menu">
                                <li><a href="#">OPD Services</a></li>
@@ -111,8 +112,9 @@
                             </ul>
                         </li>                                               
                         <li><a href="page-blog.html">News & Events</a></li>  
-                        <li><a href="{{url::to('/')}}/gallery">Gallery</a></li>      
-                        <li><a href="{{url::to('/')}}/contactus">Contact Us</a></li>                     
+                        <li><a href="{{url::to('/')}}/galleryfront">Gallery</a></li>      
+                        <li><a href="{{url::to('/')}}/contactus">Contact Us</a></li> 
+
                     </ul>
                 </nav><!-- /#main-nav -->
 

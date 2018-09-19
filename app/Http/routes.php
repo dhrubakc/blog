@@ -25,10 +25,23 @@ Route::post('/home', 'HomeController@index');
 //Route::POST('category', 'CategoryController@store');
 //Route::patch('category/{id}', 'CategoryController@update');
  //Route::delete('category/{id}', 'CategoryController@destroy');
-Route::resource('category','CategoryController');
-Route::get('/gallery', 'GalleryController@index');
-Route::get('/contactus', 'ContactusController@index');
+Route::resource('/home/category','CategoryController');
+Route::resource('/gallery', 'GalleryController');
+Route::resource('/result', 'ResultController');
+
+
+Route::resource('/programs','ProgramsController');
+Route::resource('/introduction','IntroductionController');
+Route::resource('/geographicallocation','GeographicallocationController');
+Route::resource('/missionvission','MissionvissionController');
+Route::resource('/boardmember','BoardmemberController');
+Route::resource('/chairmanmessage','ChairmanMessageController');
 
 });
-
-
+Route::get('/contactus', 'ContactusController@index');
+Route::get('/introfront','IntroFrontController@index');
+Route::get('/missionfront','MissionFrontController@index');
+Route::get('/geolocationfront','GeolocationFrontController@index');
+Route::get('/resultfront','ResultFrontController@index');
+Route::get('/boardmemberfront','BoardmemberFrontController@index');
+Route::get('/galleryfront', 'GalleryFrontController@index');
